@@ -1,0 +1,13 @@
+-nextjs is a framework for building fast and search engine friendly applications
+-react is a library for building interactive UIs
+-a framework is a collection of libraries, tools and conventions that streamline app developement
+-there are two ways we can exec JS - 1. within a web browser on the client 2. within a node.js runtime on the server
+-a nodeJS runtime is an environment that can exec JS code. So a nodejs runtime is just a fancy term for a program that can exec JS code
+-in nextJS our router is based on the file system. The routing system is also based on convention not configuration
+-components that are rendered on the server do not have interactivity so they cannot access browsers events and apis like: click, submit, change, localStorage etc. They cannot maintain state or use effects. These functionalities are only available in client components - so in real world apps we often use a mix of server and client components. We should default to server components and use client components only when we absolutely need them
+-in nextjs all components inside the app folder are server components by default
+-files and folders in the app folder are not publically accessible unless we add a page file inside it
+-react query is a better way to fetch data then using the state and effect hooks in react
+-problems with rendering on the client: large bundles shipped to the client, resource intensive (consume memory on the client), no SEO, less secure - also fetching data on the client involves an extra round trip to the client because first the client downloads all the html template, js, css and assets from the server and any additional data fecthing is a seperate roundtrip
+-benefits of typescript: we get code completion or intellisense and we can catch errors at build (compile) time before we run and deploy our app
+-to fetch data, whenever possible we should fetch it in server components - because it is more SEO friendly and we dont have an extra request to fetch the data seperately from the server
