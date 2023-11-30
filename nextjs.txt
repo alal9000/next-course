@@ -12,4 +12,7 @@
 -benefits of typescript: we get code completion or intellisense and we can catch errors at build (compile) time before we run and deploy our app
 -to fetch data, whenever possible we should fetch it in server components - because it is more SEO friendly and we dont have an extra request to fetch the data seperately from the server and with server fetching we also have caching
 -caching - storing data somewhere where its faster to access. There are 3 places where we can get the data from: memory, file system or network - as we go down this list getting the data becomes slower. nextJS comes with a built in data cache
-- caching behviour is only implemented in the fetch function - not a 3rd party lib
+- caching behaviour is only implemented in the fetch function - not a 3rd party lib
+-two types of rendering in nextJS: static and dynamic. Done for optimization. Static rendering: renders only once when the app is built for production (renders at build time). Dynamic rendering - renders everytime there is a request (renders at request time)
+-rendering in njs can happen on client or on the server. If it happens on the server it can happen at build time (static rendering) or request time (dynamic rendering)
+-rendering refers to the process of generating or producing output
