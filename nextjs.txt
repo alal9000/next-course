@@ -16,3 +16,9 @@
 -two types of rendering in nextJS: static and dynamic. Done for optimization. Static rendering: renders only once when the app is built for production (renders at build time). Dynamic rendering - renders everytime there is a request (renders at request time)
 -rendering in njs can happen on client or on the server. If it happens on the server it can happen at build time (static rendering) or request time (dynamic rendering)
 -rendering refers to the process of generating or producing output
+-reserve the global css file for styles that are truely global like: body, headings, hyperlinks, fonts etc - for styles that are specific to a page or a component use css modules or tailwind
+-css module is a css file that is scoped to a page or a component. Its a way to prevent styles from clashing or overwriting each other
+-we cannot use hypens when naming a JS property
+
+
+*do summary for fundamentals
