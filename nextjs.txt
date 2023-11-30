@@ -19,6 +19,9 @@
 -reserve the global css file for styles that are truely global like: body, headings, hyperlinks, fonts etc - for styles that are specific to a page or a component use css modules or tailwind
 -css module is a css file that is scoped to a page or a component. Its a way to prevent styles from clashing or overwriting each other
 -we cannot use hypens when naming a JS property
+-SSR (server side rendering) makes our app SEO friendly
+-SSG (static site generation): to further improve performance we can pre-render pages and components that have static data during the build phase and serve them whenever needed
+-caching reduces the need to retrieve the same piece of data twice
 
 
 *do summary for fundamentals
