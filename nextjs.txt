@@ -22,6 +22,8 @@
 -SSR (server side rendering) makes our app SEO friendly
 -SSG (static site generation): to further improve performance we can pre-render pages and components that have static data during the build phase and serve them whenever needed
 -caching reduces the need to retrieve the same piece of data twice
-
+-tailwind is a utility class css framework
+-daisyUI is a component library built on top of tailwind - it provides a collection of pre-designed and reuseable components such as badge, card, button etc
+-njs has a built in router based on the file sys. To make our routes publicy accessible we have to put a special page file in the our route folder
 
 *do summary for fundamentals
