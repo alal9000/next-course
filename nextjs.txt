@@ -10,4 +10,6 @@
 -react query is a better way to fetch data then using the state and effect hooks in react
 -problems with rendering on the client: large bundles shipped to the client, resource intensive (consume memory on the client), no SEO, less secure - also fetching data on the client involves an extra round trip to the client because first the client downloads all the html template, js, css and assets from the server and any additional data fecthing is a seperate roundtrip
 -benefits of typescript: we get code completion or intellisense and we can catch errors at build (compile) time before we run and deploy our app
--to fetch data, whenever possible we should fetch it in server components - because it is more SEO friendly and we dont have an extra request to fetch the data seperately from the server
+-to fetch data, whenever possible we should fetch it in server components - because it is more SEO friendly and we dont have an extra request to fetch the data seperately from the server and with server fetching we also have caching
+-caching - storing data somewhere where its faster to access. There are 3 places where we can get the data from: memory, file system or network - as we go down this list getting the data becomes slower. nextJS comes with a built in data cache
+- caching behviour is only implemented in the fetch function - not a 3rd party lib
