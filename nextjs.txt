@@ -30,9 +30,10 @@
 -QSPs (query string parameters) are a way to pass state on the server
 -we cannot access QSPs in our components, we can only do that in our pages. Anytime we need to access the url or QSPs we have to do that in our pages adn pass data to our components
 -we use layouts to create UIs that are shared between multiple pages
-
-
-
+-the link element in next only downloads the content of the target page, ie: it doesn't re-download css / js files, layout components like nav bar etc. It also prefetches links that are in the viewport. ie: predownloads linked urls at the target url
+-as we navigate in our app, njs caches (stores the payload of) the pages on the client. This client cache only lasts for one session and clears when we do a full page reload
+-programmatic navigation: take a user to new page as the result of clicking a button or submitting a form
+-we can use the router object if we need programmatic navigation
 
 
 
