@@ -29,6 +29,7 @@
 -<a> elements causes a full page reload so use <Link> in njs instead - which gives us client side navigation
 -QSPs (query string parameters) are a way to pass state on the server
 -we cannot access QSPs in our components, we can only do that in our pages. Anytime we need to access the url or QSPs we have to do that in our pages adn pass data to our components
+-we use layouts to create UIs that are shared between multiple pages
 
 
 
