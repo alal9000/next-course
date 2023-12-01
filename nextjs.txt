@@ -25,5 +25,6 @@
 -tailwind is a utility class css framework
 -daisyUI is a component library built on top of tailwind - it provides a collection of pre-designed and reuseable components such as badge, card, button etc
 -njs has a built in router based on the file sys. To make our routes publicy accessible we have to put a special page file in the our route folder
+-a dynamic route is a route with a parameter
 
 *do summary for fundamentals
