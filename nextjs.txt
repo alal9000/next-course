@@ -34,8 +34,8 @@
 -as we navigate in our app, njs caches (stores the payload of) the pages on the client. This client cache only lasts for one session and clears when we do a full page reload
 -programmatic navigation: take a user to new page as the result of clicking a button or submitting a form
 -we can use the router object if we need programmatic navigation
-
-
+-we cannot use error files to captures errors that occur in our root layout component - we need to create a seperate error file for capturing errors that happen in that layout. That error file is called global error
+-in real apps we should log errors using a logging service
 
 
 
