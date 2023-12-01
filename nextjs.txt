@@ -43,6 +43,12 @@
 -route handler: a function that handles http requests
 -http requests have various methods. ie: GET, POST, PUT, PATCH and DELETE
 -to prevent caching we have to add the request object as a parameter in our route files, even though its not used
+-in real apps: the id gets generated on the server (by database) and we need to validate the incoming request
+-status: 400 = bad request, 200 = successful, 201 = created, 301 = moved permanently and 404 = not found
+-we can use PUT or PATCH for updating an object. We should use PUT for replacing an entire object and PATCH for updating one or more properties
+
+
+
 
 
 *do summary for fundamentals
