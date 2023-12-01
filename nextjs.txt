@@ -36,7 +36,13 @@
 -we can use the router object if we need programmatic navigation
 -we cannot use error files to captures errors that occur in our root layout component - we need to create a seperate error file for capturing errors that happen in that layout. That error file is called global error
 -in real apps we should log errors using a logging service
-
+-a dynamic route is one that takes one or more parameters. To add parameters to our routes we wrap directory names with square brackets ie: [id]
+-in standard react apps we use the state hook for managing component state, in server render apps, however, we use query string parameters (QSPs) to keep state. This allows us to bookmark pages in a specific state like a filtered and sorted list of products
+-file conventions (file names that njs looks for): page.tsx, layout.tsx, loading.tsx, not-found.tsx, error.tsx
+-your url folders should have either a page file or a route file but not both. If we want to show something to the user, return markup / html content we should add a page file, but if we want to handle http requests we should add a route file.
+-route handler: a function that handles http requests
+-http requests have various methods. ie: GET, POST, PUT, PATCH and DELETE
+-to prevent caching we have to add the request object as a parameter in our route files, even though its not used
 
 
 *do summary for fundamentals
