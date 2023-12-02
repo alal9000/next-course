@@ -49,6 +49,8 @@
 -an API is an interface that allows two software entities to talk to each other
 -database engines: MySQL, PostgreSQL, MongoDB, SQL Server
 -ORM (object relational mapper): is a tool thats sits between our app and our db.
+-in prisma models, by default all fields are required
+-scalar types are primitive types that hold a single value like: string, number, boolean etc. By contrast compound or non-scalar types can represent multiple values or a collection of values 
 
 
 
