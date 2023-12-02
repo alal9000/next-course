@@ -52,8 +52,10 @@
 -in prisma models, by default all fields are required
 -scalar types are primitive types that hold a single value like: string, number, boolean etc. By contrast compound or non-scalar types can represent multiple values or a collection of values
 -as we define or change our models in prisma, we have to create migrations - these migrations are used to keep our prisma schema insync with our db schema
+-to connect with our database we create an instance of PrismaClient()
 -make sure there is only a single instance of the PrismaClient() running in our app.
 -the @ in import statements represents the src directory or project directory
+-to store the files that a user uploads we have to use a cloud platform
 
 
 
