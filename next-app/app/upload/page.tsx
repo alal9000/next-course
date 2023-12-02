@@ -15,6 +15,14 @@ const UploadPage = () => {
         <CldImage src={publicId} width={270} height={180} alt="A cat image" />
       )}
       <CldUploadWidget
+      options={{
+        sources: ['local'],
+        multiple: false,
+        maxFiles: 5,
+        styles: {
+          
+        }
+      }}
         uploadPreset="ghzotexi"
         onUpload={(result, widget) => {
           if (result.event !== "success") return;
