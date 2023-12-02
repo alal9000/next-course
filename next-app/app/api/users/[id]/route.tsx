@@ -17,7 +17,7 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: number } }
+  { params }: { params: { id: string } }
 ) {
   // read the request body an validate data, if not valid return 400
   const body = await request.json();
@@ -26,11 +26,22 @@ export async function PUT(
     return NextResponse.json(validation.error.errors, { status: 400 });
 
   // if user valid, fetch the user with the given id, if doesnt exist return 404
-  if (params.id > 10)
+  const user = await prisma.user.findUnique({
+    where: {
+      id: parseInt(params.id)
+    }
+  });
+
+  if (!user)
     return NextResponse.json({ error: "User not found" }, { status: 404 });
 
   // update the given user and return it
-  return NextResponse.json({ id: 1, name: body.name });
+  const updatedUser = await prisma.user.update({
+    where: { id: user.id },
+    data: { name: body.name, email: body.email }
+  });
+
+  return NextResponse.json(updatedUser);
 }
 
 export function DELETE(
