@@ -56,6 +56,15 @@
 -make sure there is only a single instance of the PrismaClient() running in our app.
 -the @ in import statements represents the src directory or project directory
 -to store the files that a user uploads we have to use a cloud platform
+-OAuth: stands for 'open authentication' and is a standard authentication protocol that a lot of websites like google fb twitter implement. With OAuth we can allow our users to login with their google or twitter accounts
+-we can read our environment variables with process.env.{ENVIRONMENT_VARIABEL_HERE}
+-we can use an exclaimation to assert to the TS compiler that we definately have a value in a variable if it is saying the type of a property is potentially undefined ie: if we see this error - Type 'string | undefined' is not assignable to type 'string'. Type 'undefined' is not assignable to type 'string'.ts(2322)
+-when a user logs in next-auth creates an authentication session for that user - by default that session is represented as a JSON web token. A JSON web token or JWT is like a passport or drivers licence (ID card) that the client uses to identify itself
+-cookies are small pieces of information that are exchanged between client and server with each request. So everytime our app sends a request to the server - the cookie stored in our browser is sent to the server
+
+
+-protocol and API meaning, 
+
 
 
 
