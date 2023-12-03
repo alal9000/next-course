@@ -61,7 +61,8 @@
 -we can use an exclaimation to assert to the TS compiler that we definately have a value in a variable if it is saying the type of a property is potentially undefined ie: if we see this error - Type 'string | undefined' is not assignable to type 'string'. Type 'undefined' is not assignable to type 'string'.ts(2322)
 -when a user logs in next-auth creates an authentication session for that user - by default that session is represented as a JSON web token. A JSON web token or JWT is like a passport or drivers licence (ID card) that the client uses to identify itself
 -cookies are small pieces of information that are exchanged between client and server with each request. So everytime our app sends a request to the server - the cookie stored in our browser is sent to the server
-
+-to protect our routes we use middleware. With middleware we can run code before a request is completed. So we can create a middleware function that get exec on every request
+- we can use syntatic sugar to import and export in one go ie: export { default } from "next-auth/middleware"; - here we export the default object imported from the next-auth/middleware module
 
 -protocol and API meaning, 
 
