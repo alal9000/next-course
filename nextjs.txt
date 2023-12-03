@@ -66,6 +66,7 @@
 -when we use a db adapter, next-auth will automatically store user data in our db
 -at the current time we cannot use db sessions with social logins or OAuth providers
 -using the bcrypt library we can encrypt passwords upon inserting them into the db
+-we have two ways to style our emails - css properties or tailwind
 
 
 -protocol and API meaning, 
