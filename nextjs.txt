@@ -75,6 +75,8 @@
 -server components are rendered on the server and returned to the client. Nextjs will then render and inject client side code on our pages (this is called hydration) 
 -a generic type parameter represents a type
 -if we are using a variable font like open sans we dont need to provide a weight
+-whenever we export a metadata object from a layout or a page file, njs will automatically include that metadata object in the head of our html
+-A promise represents the completion of an asynchronous operation
 
 
 
