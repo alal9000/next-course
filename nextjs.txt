@@ -71,6 +71,14 @@
 -in njs for local images, njs will automatically detect their size, so we dont have to specify the width and the height as props but for remote images we should set the dimension because njs doesnt know their size ahead of time
 -when an image loses its aspect ratio it means the original shape of the image is distorted - aspect ratio is the ratio of the width to the height of an image. ie: an image with an aspect ratio of 4:3 means the width is four units for every 3 units of height.
 -lazy loading: elements are only retreived when they are visible in the viewport ie: images - by default the image component in njs uses lazy loading
+-for google analytics the script should be as high as possible on the page and instead of using the script tag we should use the script component in njs
+-server components are rendered on the server and returned to the client. Nextjs will then render and inject client side code on our pages (this is called hydration) 
+-a generic type parameter represents a type
+-if we are using a variable font like open sans we dont need to provide a weight
+
+
+
+
 
 -protocol and API meaning, 
 * "moduleResolution": "bundler", (previous setting in tsconfig.json)
