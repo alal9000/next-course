@@ -63,6 +63,10 @@
 -cookies are small pieces of information that are exchanged between client and server with each request. So everytime our app sends a request to the server - the cookie stored in our browser is sent to the server
 -to protect our routes we use middleware. With middleware we can run code before a request is completed. So we can create a middleware function that get exec on every request
 - we can use syntatic sugar to import and export in one go ie: export { default } from "next-auth/middleware"; - here we export the default object imported from the next-auth/middleware module
+-when we use a db adapter, next-auth will automatically store user data in our db
+-at the current time we cannot use db sessions with social logins or OAuth providers
+
+
 
 -protocol and API meaning, 
 
