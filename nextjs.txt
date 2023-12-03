@@ -69,7 +69,7 @@
 
 
 -protocol and API meaning, 
-
+* "moduleResolution": "bundler", (previous setting in tsconfig.json)
 
 
 
