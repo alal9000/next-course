@@ -75,3 +75,5 @@
 
 
 *do summary for fundamentals
+
+note: for cloudinary I used my github to login
