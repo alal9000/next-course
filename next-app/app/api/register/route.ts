@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/client";
 import { z } from "zod";
 import bcrypt from "bcrypt";
+import { Prisma } from "@prisma/client";
 
 const schema = z.object({
   email: z.string().email(),
@@ -25,7 +26,7 @@ export async function POST(request: NextRequest) {
     data: {
       email: body.email,
       hashedPassword
-    }
+    } as Omit<Prisma.UserCreateInput, 'hashedPassword'> & { hashedPassword: string },
   });
 
   return NextResponse.json({ email: newUser.email });
