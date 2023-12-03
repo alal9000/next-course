@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import NavBar from "./NavBar";
 import { SessionProvider } from "next-auth/react";
 import AuthProvider from "./auth/Provider";
+import Home from "./page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +39,7 @@ export default function RootLayout({
         <AuthProvider>
           <NavBar />
           <main className="p-5">
-            <h1>Hello World</h1>
+            <Home />
             {children}
           </main>
         </AuthProvider>
