@@ -67,7 +67,10 @@
 -at the current time we cannot use db sessions with social logins or OAuth providers
 -using the bcrypt library we can encrypt passwords upon inserting them into the db
 -we have two ways to style our emails - css properties or tailwind
-
+-the njs image component automatically compresses our image and resizes it depending on the device size, so we should always prefer to use this component as opposed to the standard html image element
+-in njs for local images, njs will automatically detect their size, so we dont have to specify the width and the height as props but for remote images we should set the dimension because njs doesnt know their size ahead of time
+-when an image loses its aspect ratio it means the original shape of the image is distorted - aspect ratio is the ratio of the width to the height of an image. ie: an image with an aspect ratio of 4:3 means the width is four units for every 3 units of height.
+-lazy loading: elements are only retreived when they are visible in the viewport ie: images - by default the image component in njs uses lazy loading
 
 -protocol and API meaning, 
 * "moduleResolution": "bundler", (previous setting in tsconfig.json)
